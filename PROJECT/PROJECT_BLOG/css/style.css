@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ff5600;
+    
+}
+header {
+    display: flex;
+    justify-content:space-between;
+    padding:5px 30px;
+    gap:8px;
+    width: 100%;
+    position:fixed;
+    top:0;
+     background-color:white;
+     border-bottom:1px solid black
+     
+ }
+ header h1{
+    font-family:  "Rubik Wet Paint", sans-serif;
+    font-weight:bold;
+    padding: 5px;
+}
+.sidebar{
+    display:none;
+}
+
+
+.container{
+    margin:2rem;
+}
+
+section{
+    background-color:white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius:5px;
+    padding:2rem;
+    margin-bottom:1rem;
+    
+    flex-wrap:wrap;
+}
+span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+ h2 {
+    font-family: 'Georgia', serif;
+    padding-top: 1.5rem;
+}
+
+
+
+.date{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*BREAK POINT*****/
+@media screen and (min-width:1045px){
+    section{
+        
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        background: #fff;
+        margin:80px 10px 30px 295px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        position: relative;
+        z-index:-2;
+    }
+}
+@media screen and (min-width:1054px){
+    .sidebar{
+        display:block;
+        z-index:-1;
+      
+    }
+    .sidebar {
+        background-color: #ffffff;
+        border-right: 1px solid #000000;
+        border-top: 1px solid #000000;
+        padding: 15px;
+        max-width:19% ;
+        position: fixed;
+        height: 100%; 
+        top: 70px;
+        padding-left: 1.7rem; 
+        
+    }
+   
+     .sidebar h2{
+        border-bottom: 2px solid black;
+        padding: 1rem;
+        color: black;
+        text-decoration: none;
+     }
+    
+    .sidebar ul {
+        list-style-position: inside;
+        list-style: circle;
+        padding: 2px;
+        margin-top: 2rem;
+    }
+    
+    .sidebar ul li {
+        margin: 10px 0;
+        font-size: 1rem;
+        font-weight:800;
+    
+        
+    }
+    
+    .sidebar a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .sidebar a:hover {
+        text-decoration: underline;
+    }
+}
