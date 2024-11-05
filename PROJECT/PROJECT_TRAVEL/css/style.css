@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* .black-ops-one-regular {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  } */
+.main{
+    background-image: url(/Assets/AFRICA\ IS\ HOME.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-width: auto;
+    height:90vh;
+}
+main{
+    
+    margin: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+h1{
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-size: 32px;
+    font-style: normal;
+    padding: 10px;
+    margin-left: 1rem;
+    color: #FC0707;
+}
+
+.hamburger{
+    margin: 1rem 2rem 0 0;
+    color: #FC0707;
+}
+nav{
+    display: none;
+    padding: 10px ;
+    margin-right: 1rem;
+}
+ul{
+    display: flex;
+    gap:2rem;
+    padding: 5px;
+}
+ ul li{
+    list-style: none;
+    font-size: 20px;
+}
+
+hr{
+    color: #ffff;
+}
+
+/********CONTENT*/
+.caption{
+    margin-top:3rem;
+    min-width: 400px;
+    padding-left: 1.5rem;
+}
+.visit{
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-size: 60px;
+    font-style: normal;
+    color:#ffff;
+}
+
+.sub-cap-container{
+    color: #ffff;
+    margin: 1rem;
+    min-width: 100px;
+    padding: 1rem 0.5rem;
+}
+.sub-caption_1{
+    margin-bottom:2rem ;
+}
+.sub-cap_2{
+    display: none;
+}
+
+.start_seek{
+    background-color:#FC0707;
+    color:#fff;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 200px;
+    padding: 0.5rem 1rem;
+   
+}
+.start_seek:hover{
+    background-color:#a3242497;
+    border: 1px solid white;
+}
+
+
+.inline{
+    display: none;
+}
+.horizontal_recommend{
+    display: none;
+}
+
+.recom{
+    border-radius: 20px;
+    color:#ffff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    padding:0.5rem 1rem;
+}
+
+.recom:hover{
+    background-color:#FC0707;
+    border: 1px solid white;
+}
+.pictures{
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    
+    background-image: linear-gradient(#474134, black);
+    height: 250px;
+   padding: 1rem;
+    column-gap: 1em;
+
+}
+.box{
+    height: 200px;
+    filter: drop-shadow(0 0 0.2rem rgb(241, 232, 233));
+    border: none;
+}
+
+.box p{
+    color: #fff;
+    text-align:center;
+    justify-content:flex-end ;
+    
+}
+
+.box:first-child{
+    margin-top: -1.4rem;
+    background-image: url(/Assets/river\ ethopia\ the\ deepest\ inline\ waterway\ in\ africa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box:nth-child(2){
+    margin-top: -1.4rem;
+    background-image: url(/Assets/matsirga\ attat\ waterfalls\ kaduna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box:nth-child(3){
+    margin-top: -1.4rem;
+    display: none;
+}
+.box:nth-child(4){
+    margin-top: -1.4rem;
+    display: none;
+}
+.box:last-child{
+    display: none;
+    margin-top: -1.4rem;
+    background-image: url(/Assets/River_Donga_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer_page{
+    background-image: url(/Assets/Beach\ iPhone\ Wallpapers\ HD\ Quality\ -\ Best\ Beach\ Backgrounds.jpg);
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1em;
+    padding: 0 1rem;
+    border-bottom:  2px solid #fff;
+    
+}
+
+.fotter_box{
+    margin-top: -1.4rem;
+}
+.fotter_box h5{
+    font-size: 20px;
+}
+
+.fotter_box:first-child{
+    color: #FC0707;
+    margin-top: -1.4rem;
+}
+
+.fotter_box:nth-child(2){
+    color: #FC0707;
+    margin-top: -1.4rem;
+
+}
+.fotter_box2 h1{
+    padding: 0;
+    color: #fff;
+
+}
+
+h1 span{
+    color: #FC0707;
+}
+
+.fotter_box p{
+    padding:  1rem 1rem;
+    color: white;
+
+}
+.fotter_box a{
+    padding: 0.3rem 1rem;
+    color: white;
+    border-radius: 20px;
+    background-color:#FC0707;
+    text-decoration: none;
+    margin: 1rem ;
+}
+
+
+
+footer{
+    display: grid;
+    place-content: end center;
+    align-self: center;
+    background-color: #474134;
+    color:#fff;
+    padding: 0.5rem 0;  
+}
+ 
+/*MEDIA QUERIES*****/
+
+
+@media  screen and (min-width:1283px){
+
+    .main{
+        min-height: 100vh;
+        width: 80% auto;
+
+    }
+    .hamburger{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+    .sub-cap_2{
+        display: flex;
+    }   
+
+    .visit{
+        margin-top: 170px;
+        margin-left: 3rem;
+    }
+
+    .sub-cap-container{
+        
+        margin-top: 4rem;
+        display: flex;
+        /* display: grid;
+        grid-template-columns: repeat(3,  5fr 3fr);
+        column-gap: 4rem; */
+        margin-left:3rem ;
+        column-gap: 1rem;
+    }
+
+    .sub-caption_1{
+        display: flex;
+        width: 40%;
+    }
+
+    .sub-cap_2 {
+        display: block;
+        margin-bottom: 50px;
+        width:50%;
+        
+    }
+
+    .start_seek{
+        display: inline-block;
+        height: 50px;
+        padding: 0.4rem 4rem;
+        align-content: center;
+        font-size: 1.4rem;
+        margin-top: 2rem;
+    }
+    .inline{
+        display: block;
+        margin-right:20.5%;
+        border:1px solid #FC0707;
+    }
+    .horizontal_recommend{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5rem;
+        margin-top: -1.6rem;
+        padding: 0.5rem 0;
+        
+    }
+
+    .pictures{
+        column-gap: 1rem;
+        justify-content: center;
+
+    }
+
+    .box:hover{
+        transform: translateY(-20PX);
+        transition-duration: 1ms;
+        transition-timing-function: ease-in-out;
+
+    }
+
+    
+    .box:nth-child(3){
+        display: flex;
+        background-image: url(/Assets/Kuri\ Wakko\ Dunes\,\ Yobe\ State.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+    
+    .box:nth-child(4){
+        display: flex;
+        background-image: url(/Assets/osun-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+.box:last-child{
+    display: flex;
+}  
+
+.fotter_box2{
+    text-align:end;
+    padding-right: 2rem;
+}
+}
