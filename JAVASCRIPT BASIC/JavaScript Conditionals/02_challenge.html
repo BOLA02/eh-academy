@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Grade Calculator</title>
+</head>
+<body>
+
+    <!-- QUESTION -->
+
+    <!-- Using IF/ELSE statements, create a grade calculator based on the following conditions
+Grade is A if mark is between 70 - 100, grade is C if mark is between 50 - 60, grade is F if mark is between 0 - 40 -->
+        <h1>Grade Calculator</h1>
+        <p class="score"></p>
+
+<script>
+
+
+// Element
+const scoreElement  = document.querySelector('.score')
+
+//
+    let mark =prompt("Enter score")
+    mark = Number(mark)
+       if (mark >=70 && mark <=100 ){
+       scoreElement.textContent = `Your grade score is :  ${ mark} mark and your mark is: A`;
+       }
+        if(mark >=50 && mark <= 60){
+        scoreElement.textContent = `Your grade score is :  ${ mark} mark and your mark is: C`;
+       }
+        if(mark >=1 && mark <=40 ){
+        scoreElement.textContent = `Your grade score is :  ${ mark} mark and your mark is: F`;
+       }
+       else if(mark < 1){
+        scoreElement.textContent = `Your grade score is : invalid `;
+        alert('enter number')
+       }
+
+</script>
+</body>
+</html>

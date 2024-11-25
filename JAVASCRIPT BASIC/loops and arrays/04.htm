@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Listing</title>
+</head>
+<body>
+    <!-- Instructions:
+
+Define an array named cars and put these items into it: toyota, honda, mazda, mitsubishi, tesla, lexus
+Log first item and last item into console. For last item use length property.
+Add an item mercedes-benz to the array  and log it to the console.
+Loop through all items of the array and log them to the console -->
+<script>
+    const cars = ['toyota', 'honda', 'mazda', 'mitsubishi', 'tesla', 'lexus']
+// first item on the array
+    const firstItem = cars[0];
+    console.log(firstItem)
+//last item on the array
+    const lastItem = cars[cars.length - 1]
+    console.log(lastItem)
+
+    cars.push('mercedes-benz')
+    console.log(cars)
+
+    for(i= 0; i < cars.length; i++){
+        const loopsCar = cars[i];
+        console.log(loopsCar);
+        
+    }
+  
+ 
+</script>
+</body>
+</html>

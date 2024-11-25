@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change a Webpage Color</title>
+  <style>
+    
+    .background_color{
+        width: 80%;
+        min-height: 500px;
+        margin: 2% auto;
+        font-family: Arial;
+        text-align: center;
+        border-radius: 1rem;
+        
+    }
+
+    
+      button {
+    display: block;
+    margin: 20px auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+} 
+
+  </style>
+</head>
+<body>
+   <section class="background_color"></section>
+   <button onclick="changeColor()">change background color</button>
+  
+
+  <script>
+    const colorBackground = document.querySelector('.background_color')
+   
+
+const changeColor = function (){
+    colorBackground.style.backgroundColor = "blue"   
+}
+
+  </script>
+</body>
+</html>
